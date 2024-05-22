@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/blogs', function () {
     return view('blog_list');
 })->name('blogs.main');
+
+Route::get('/blog/{blog}', function() {
+    
+});
