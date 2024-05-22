@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('blogs.main');
 });
+
+Route::get('/blogs', function () {
+    return view('blog_list');
+})->name('blogs.main');
